@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.dados {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(rgb(121, 1, 1), rgb(255, 0, 0));
+    height: 100%;
+}
+
+.print {
+   display: none;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 320px;
+}
+
+.print h1 {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.print h2 {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.print p {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.assinatura {
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.conteiner {
+    margin-top: 70px;
+    background: rgb(211, 0, 0);
+    border-radius: 30px;
+    width: 600px;
+    height: 350px;
+    -webkit-box-shadow: 5px 4px 25px 7px rgba(0,0,0,0.66); 
+    box-shadow: 5px 4px 25px 7px rgba(0, 0, 0, 0.308);
+}
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner h1 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: yellow;
+}
+
+.caixa_text {
+    padding: 10px;
+}
+
+.caixa_text input {
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+.caixa_text textarea {
+    width: 250px;
+    height: 80px;
+    border-radius: 8px;
+    border: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+::placeholder{
+    padding-left: 10px;
+    text-align: left;
+}
+
+
+@media print {
+    .print {
+        display: block;
+    }
+
+    .dados {
+        display: none;
+    }
+}
+
+.conteiner02{
+    display: flex;
+}
+
+#checkboxX {
+    color: white;
+    font-size: 13px;
+}
+
+#resultadoTroco {
+    display: none;
+}
+
+#link {
+    font-size: 14px;
+}
+
+#caixaTroco{
+    display: none;
+}
+
+button {
+    margin-top: 20px;
+    background-color: yellow;
+    color: red;
+    font-weight: 500;
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+button:hover {
+    width: 140px;
+    transition: 0.4s;
+}
+
+
+select {
+padding: 8px;
+width: 170px;
+font-size: 13px;
+border: none;
+border-radius: 10px;
+background-color: #fff;
+outline: none;
+}
+
+option {
+padding: 5px;
+}
+
+label {
+    font-size: 15px
+}
+
+
+.wrapper{
+    max-width: 410px;
+    border-radius: 7px;
+    padding: 16px 25px;
+    transition: height 0.5s ease;
+}
+
+header h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 21px;
+}
+header p{
+    text-align: center;
+    margin-top: 5px;
+    color: #474747;
+    font-size: 16px;
+}
+.wrapper .form{
+    margin: 20px 0 25px;
+}
+.wrapper :where(input, button){
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form input{
+    font-size: 18px;
+    padding: 0 17px;
+    border: 1px solid #999;
+}
+.form button{
+    display: none;
+}
+.wrapper .qr-code{
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    padding: 33px 0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #987a71;
+}
+.wrapper .img{
+    width: 180px;
+    height: auto;
+}
+.wrapper.active .qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: apacity 0.5s ease;
+}

@@ -1,0 +1,100 @@
+<html lang="pt">
+<head>
+    <title>Comando de Entrega</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Importa os módulos JavaScript -->
+    <script type="module" src="script.js"></script>
+    <script type="module" src="./Modulos/ReciboSimples.js"></script>
+    <script type="module" src="./Modulos/ReciboLocaliz.js"></script>
+    <script type="module" src="./Modulos/ReciboContato.js"></script>
+
+</head>
+<body>
+    <!-- Seção de entrada de dados -->
+    <div class="dados">
+        <div class="conteiner">
+            <div class="titulo">
+                <h1>Comando de Entrega</h1>
+            </div>
+            <div class="informacoes">
+                <div class="container01">
+                    <!-- Input para o nome do cliente -->
+                    <div class="caixa_text">
+                        <input type="text" placeholder="Cliente" id="cliente" />
+                    </div>
+                    <!-- Formulário para seleção do método de pagamento -->
+                    <form>
+                        <label style="color: white;" for="opcoes-pagamento">Pagamento:</label>
+                        <select id="pagamento" name="pagamento">
+                          <option value="Dinheiro">Dinheiro</option>
+                          <option value="Dinheiro Trocado">Dinheiro Trocado</option>
+                          <option value="Pix">PIX</option>
+                          <option value="Cartão">Cartão</option>
+                          <option value="Crediário">Crediário</option>
+                        </select>
+                      </form>
+                      <!-- Caixa de texto para troco -->
+                    <div class="caixa_text" id="caixaTroco">
+                        <input type="number" placeholder="Troco para?" id="troco" />
+                    </div>
+                    <!-- Caixa de texto para valor -->
+                    <div class="caixa_text">
+                        <input type="number" placeholder="Valor" step="0.01" id="valor" />
+                    </div>
+                </div>
+                <div class="container02">
+                    <!-- Caixa de texto para endereço -->
+                    <div class="caixa_text">
+                        <textarea type="text" id="endereco" placeholder="Endereço"></textarea>
+                    </div>
+                    <!-- Formulário para geração de QR Code -->
+                    <div class="form">
+                        <div class="caixa_text">
+                            <input type="text" placeholder="Link" id="link" />
+                        </div>
+                        <!-- Checkbox para indicar se é WhatsApp -->
+                        <label id="checkboxX">
+                            <input type="checkbox" id="checkboxRecibo" name="checkboxCode" value="x"> É WhatsApp? 
+                        </label>
+                    </div>
+                </div>
+            </div>
+             <!-- Botão para gerar o comando -->
+            <button id="botao-gerar-recibo">Gera Comando</button>
+        </div>
+    </div>
+     <!-- Seção de impressão -->
+    <div class="Print" id="print">
+        <div class="recibo">
+                <!-- Exibição dos detalhes do recibo -->
+                <h1>Cliente - <span id="recibo_cliente"></span></h1>
+                <p><strong>Forma de Pagamento: </strong><span id="recibo_pagamento"></span></p>
+                <p id="troco_result"><strong>Troco para: </strong><span id="recibo_troco"></span></p>
+                <p><strong>Valor R$: </strong>
+                <br/><h2 id="recibo_valor">0,00</h2></p>
+                <p><strong>Endereço: </strong><span id="recibo_endereco"></span></p>
+                <br />
+                <div id="resultadoTroco"></div>
+                <!-- Exibição da hora atual -->
+                <p id="horaAtual"></p>
+                <div class="assinatura">Agradecemos a Preferêcia</div>
+        </div>
+        <!-- Seção para gerar QR Code -->
+        <div class="wrapper">
+            <div class="form">
+                <!-- Botão para gerar QR Code -->
+                <button onclick="gerarQrCode()">Gerar Qr Code</button>
+            </div>
+            <!-- Exibição do QR Code -->
+            <div class="qr-code">
+                <img src="" alt="qrcode" class="img">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
