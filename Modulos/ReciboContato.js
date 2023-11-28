@@ -2,7 +2,7 @@ export function ReciboContato() {
 
     // Obtém a referência ao elemento de impressão
     const print = document.getElementById('print');
-    print.style.height = '900px'; // Altera a altura da div para 900px
+    print.style.height = '850px'; // Altera a altura da div para 850px
 
     // Obtém referências aos elementos HTML
     const wrapper = document.querySelector(".wrapper"),
