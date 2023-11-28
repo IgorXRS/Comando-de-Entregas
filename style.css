@@ -17,7 +17,7 @@
 }
 
 .print {
-   display: none;
+    display: none;
     margin: 10px;
     padding: 20px;
     border: 1px solid black;
@@ -54,7 +54,7 @@
     background: rgb(211, 0, 0);
     border-radius: 30px;
     width: 600px;
-    height: 350px;
+    height: 450px;
     -webkit-box-shadow: 5px 4px 25px 7px rgba(0,0,0,0.66); 
     box-shadow: 5px 4px 25px 7px rgba(0, 0, 0, 0.308);
 }
@@ -65,9 +65,10 @@
 }
 
 .conteiner h1 {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 10px;
-    color: yellow;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
 }
 
 .caixa_text {
@@ -94,6 +95,22 @@
 ::placeholder{
     padding-left: 10px;
     text-align: left;
+}
+
+#logo {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 95px;
+}
+
+#logo2 {
+    width: 200px;
+    position: relative;
+    left: 30px;
+    margin-top: -30px;
+    margin-bottom: -15px;
 }
 
 

@@ -2,7 +2,7 @@ export function ReciboContato() {
 
     // Obtém a referência ao elemento de impressão
     const print = document.getElementById('print');
-    print.style.height = '800px'; // Altera a altura da div para 800px
+    print.style.height = '900px'; // Altera a altura da div para 900px
 
     // Obtém referências aos elementos HTML
     const wrapper = document.querySelector(".wrapper"),
@@ -20,7 +20,7 @@ export function ReciboContato() {
     generateBtn.innerText = "Aguarde...";
 
     // Cria um link do WhatsApp com o número fornecido
-    let qrValue = `https://wa.me/${numeroWhatsapp}`;
+    let qrValue = `https://wa.me/55${numeroWhatsapp}`;
 
     // Define a fonte da imagem QR Code
     qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=${qrValue}`;
