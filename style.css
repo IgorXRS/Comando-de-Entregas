@@ -124,6 +124,13 @@
     }
 }
 
+#WhatsApp{
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
 .conteiner02{
     display: flex;
 }
