@@ -125,23 +125,6 @@
 }
 
 
-@media print {
-    .print {
-        display: block;
-    }
-
-    .dados {
-        display: none;
-    }
-    #frases{
-        display: none;
-    }
-    #imprecao{
-        height: auto;
-        width: auto;
-    }
-}
-
 #WhatsApp{
     font-size: 12px;
     margin-left: 30px;
@@ -305,4 +288,20 @@ header p{
 .imprecao .visualizar {
     display: block;
     background: green;
+}
+
+
+@media print {
+    .print {
+        display: flex !important;
+    }
+
+    .dados {
+        display: none !important;
+    }
+    #imprecao{
+        display: block !important;
+        height: auto !important;
+        width: auto !important;
+    }
 }

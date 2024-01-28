@@ -109,11 +109,6 @@
     </div>
 
 
-    <!-- Importa os módulos JavaScript -->
-    <script type="module" src="script.js"></script>
-    <script type="module" src="./Modulos/ReciboSimples.js"></script>
-    <script type="module" src="./Modulos/ReciboLocaliz.js"></script>
-    <script type="module" src="./Modulos/ReciboContato.js"></script>
     <script>
         async function buscarNovaFrase() {
     const termoPesquisa = document.getElementById('termoPesquisa').value;
@@ -139,7 +134,7 @@
     function previews() {
         var dadosDiv = document.querySelector('.dados');
         var imprecaoDiv = document.querySelector('#imprecao');
-        var printDiv = document.querySelector('.print')
+        var printDiv = document.querySelector('.Print')
 
         if (dadosDiv.style.width === '70%') {
             // Se a largura for 70%, altera para 100% e esconde a div de impressão
@@ -155,6 +150,12 @@
     }
 
     </script>
+
+    <!-- Importa os módulos JavaScript -->
+    <script type="module" src="script.js"></script>
+    <script type="module" src="./Modulos/ReciboSimples.js"></script>
+    <script type="module" src="./Modulos/ReciboLocaliz.js"></script>
+    <script type="module" src="./Modulos/ReciboContato.js"></script>
 
     
 </body>
