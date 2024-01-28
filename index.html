@@ -63,7 +63,7 @@
             <button id="botao-gerar-recibo">Gera Comando</button>
         </div>
         <!--API Frases-->
-        <div class="frases">
+        <div id="frases">
             <h3>Digite um tema:</h3>
             <input type="text" id="termoPesquisa" placeholder="Digite o tema">
             <button onclick="buscarNovaFrase()">Nova Frase</button>
@@ -71,7 +71,7 @@
             <!--<p id="frase"></p>-->
         </div>
         </div>
-        <div class="imprecao">
+        <div id="imprecao">
             <!-- Seção de impressão -->
         <div class="Print" id="print">
             <div class="recibo">
@@ -138,7 +138,7 @@
     // Adicione esta função ao seu script.js
     function previews() {
         var dadosDiv = document.querySelector('.dados');
-        var imprecaoDiv = document.querySelector('.imprecao');
+        var imprecaoDiv = document.querySelector('#imprecao');
 
         if (dadosDiv.style.width === '70%') {
             // Se a largura for 70%, altera para 100% e esconde a div de impressão
