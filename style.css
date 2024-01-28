@@ -15,7 +15,7 @@
     padding: 20px;
     background-image: linear-gradient(rgb(121, 1, 1), rgb(255, 0, 0));
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 #imprecao{
     display: none;
@@ -29,7 +29,7 @@
 }
 
 .print {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: 10px;
     padding: 20px;
