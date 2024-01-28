@@ -18,14 +18,12 @@
     width: 70%;
 }
 #imprecao{
-    display: none;
     background: rgb(211, 0, 0);
     height: 100vh;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .print {
@@ -298,6 +296,7 @@ header p{
 
 .previews {
     width: 70px;
+    font-weight: bold;
 }
 
 .previews:hover {
