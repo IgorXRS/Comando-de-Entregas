@@ -46,6 +46,7 @@ function mostrarHora() {
     }
 }
 
+
 function mostrarOcultarTroco() {
     var formaPagamento = document.getElementById("pagamento").value;
     var caixaTroco = document.getElementById("caixaTroco");

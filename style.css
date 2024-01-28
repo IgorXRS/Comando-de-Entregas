@@ -10,19 +10,34 @@
 .dados {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    flex-direction: column;
     padding: 20px;
     background-image: linear-gradient(rgb(121, 1, 1), rgb(255, 0, 0));
-    height: 100%;
+    height: 100vh;
+    width: 70%;
+}
+.imprecao{
+    display: none;
+    background: rgb(211, 0, 0);
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .print {
-    display: none;
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     padding: 20px;
     border: 1px solid black;
     border-radius: 30px;
     width: 320px;
+    height: auto;
+    background-color: white;
 }
 
 .print h1 {
@@ -50,7 +65,9 @@
 }
 
 .conteiner {
-    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background: rgb(211, 0, 0);
     border-radius: 30px;
     width: 600px;
@@ -65,7 +82,6 @@
 }
 
 .conteiner h1 {
-    padding-top: 100px;
     padding-bottom: 10px;
     color: rgb(255, 255, 255);
     font-size: 25px;
@@ -99,10 +115,7 @@
 
 #logo {
     width: 200px;
-    position: absolute;
-    left: 50%;
-    margin-left: -110px;
-    top: 95px;
+    
 }
 
 #logo2 {
@@ -121,6 +134,13 @@
 
     .dados {
         display: none;
+    }
+    .frases{
+        display: none;
+    }
+    .imprecao{
+        height: auto;
+        width: auto;
     }
 }
 
@@ -184,7 +204,8 @@ padding: 5px;
 }
 
 label {
-    font-size: 15px
+    font-size: 15px;
+    padding-left: 10px;
 }
 
 
@@ -225,21 +246,65 @@ header p{
     display: none;
 }
 .wrapper .qr-code{
-    display: flex;
+    display: none;
     opacity: 0;
     pointer-events: none;
-    padding: 33px 0;
+    padding: 15px 0;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
     border: 1px solid #987a71;
 }
 .wrapper .img{
-    width: 180px;
+    width: 150px;
     height: auto;
 }
 .wrapper.active .qr-code{
+    display: flex;
     opacity: 1;
     pointer-events: auto;
     transition: apacity 0.5s ease;
+}
+
+.frases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.frases > h3 {
+    color: white;
+    padding: 10px;
+}
+
+.frases > input {
+    height: 30px;
+    border-radius: 8px;
+    border: 0;
+    padding: 5px;
+    text-align: center;
+}
+.frases > button{
+    margin-top: 0;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.home {
+    display: flex;
+}
+
+
+.previews {
+    width: 50px;
+}
+
+.previews:hover {
+    width: 60px;
+}
+
+.imprecao .visualizar {
+    display: block;
+    background: green;
 }

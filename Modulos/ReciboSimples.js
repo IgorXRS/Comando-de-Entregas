@@ -1,8 +1,5 @@
 export function ReciboSimples () {
 
-        // Se o link estiver vazio, executa o código abaixo
-        const print = document.getElementById('print');
-        print.style.height = '570px'; // Altera a altura da div para 570px
 
         // Preenche os elementos de recibo com valores dos inputs
         document.getElementById('recibo_cliente').innerHTML = document.getElementById('cliente').value;
