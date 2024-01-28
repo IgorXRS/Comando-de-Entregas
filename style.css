@@ -15,15 +15,17 @@
     padding: 20px;
     background-image: linear-gradient(rgb(121, 1, 1), rgb(255, 0, 0));
     height: 100vh;
-    width: 70%;
+    width: 100%;
 }
 #imprecao{
+    display: none;
     background: rgb(211, 0, 0);
     height: 100vh;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .print {
@@ -294,12 +296,11 @@ header p{
 }
 
 
-.previews {
+#previews {
     width: 70px;
-    font-weight: bold;
 }
 
-.previews:hover {
+#previews:hover {
     width: 80px;
 }
 
