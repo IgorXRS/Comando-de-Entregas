@@ -292,7 +292,7 @@ header p{
 
 
 @media print {
-    .print {
+    .Print {
         display: flex !important;
     }
 
