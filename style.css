@@ -18,14 +18,12 @@
     width: 100vw;
 }
 #imprecao{
-    display: none;
     background: rgb(211, 0, 0);
     height: 100vh;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .print {
@@ -135,10 +133,10 @@
     .dados {
         display: none;
     }
-    .frases{
+    #frases{
         display: none;
     }
-    .imprecao{
+    #imprecao{
         height: auto;
         width: auto;
     }
