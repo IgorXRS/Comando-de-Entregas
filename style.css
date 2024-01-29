@@ -296,6 +296,7 @@ header p{
 @media print {
     .Print {
         display: flex !important;
+        margin-top: 0 !important;
     }
 
     .dados {
