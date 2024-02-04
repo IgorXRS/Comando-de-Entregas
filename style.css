@@ -7,6 +7,14 @@
     font-family: 'Hind Madurai', sans-serif;
 }
 
+.home{
+    display: flex;
+    background: var(--corMedia);
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 10px 5px 70px rgba(0, 0, 0, 0.644);
+}
+
 .dados {
     display: flex;
     justify-content: center;
@@ -19,25 +27,25 @@
 }
 #imprecao{
     background: rgb(211, 0, 0);
+    display: flex;
+    top: 0;
+    justify-content: center;
     height: 100vh;
     width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: auto !important;
+    overflow: auto;
 }
 
 .Print {
     display: none;
     flex-direction: column;
     margin: 10px;
-    margin-top: 100px;
     padding: 20px;
     border: 1px solid black;
     border-radius: 30px;
     width: 320px;
     height: auto;
     background-color: white;
+     overflow: auto;
 }
 
 .print h1 {
@@ -274,10 +282,6 @@ header p{
     border-radius: 5px;
 }
 
-.home {
-    display: flex;
-}
-
 
 #previews {
     width: 70px;
@@ -307,4 +311,15 @@ header p{
         height: auto !important;
         width: auto !important;
     }
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
 }
