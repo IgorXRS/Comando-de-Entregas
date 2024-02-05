@@ -306,6 +306,9 @@ header p{
     .dados {
         display: none !important;
     }
+    .home{
+        box-shadow: none !important;
+    }
     #imprecao{
         display: block !important;
         height: auto !important;
