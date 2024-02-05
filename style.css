@@ -7,12 +7,6 @@
     font-family: 'Hind Madurai', sans-serif;
 }
 
-.home{
-    display: flex;
-    background: var(--corMedia);
-    border-radius: 20px;
-}
-
 .dados {
     display: flex;
     justify-content: center;
